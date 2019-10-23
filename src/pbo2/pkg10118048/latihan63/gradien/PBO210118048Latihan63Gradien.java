@@ -19,20 +19,20 @@ public class PBO210118048Latihan63Gradien {
 
     public static void main(String[] args) {
         
-        Koordinat gl = new Koordinat(0, 0, 0, 0);
-        gl.setX1(2);
-        gl.setY1(10);
-        gl.setX2(5);
-        gl.setY2(7);
-        System.out.println("Garis yang melalui titik (" + gl.getX1() + "," + gl.getY1() +
-                ") dan (" + gl.getX2() + "," + gl.getY2() + ") memiliki gradien sebesar " + gl.hitungGradien());
+        Koordinat koordinat = new Koordinat(0, 0, 0, 0);
+        koordinat.setX1(2);
+        koordinat.setY1(10);
+        koordinat.setX2(5);
+        koordinat.setY2(7);
+        System.out.println("Garis yang melalui titik (" + koordinat.getX1() + "," + koordinat.getY1() +
+                ") dan (" + koordinat.getX2() + "," + koordinat.getY2() + ") memiliki gradien sebesar " + koordinat.hitungGradien());
         
-        gl.setX1(5);
-        gl.setY1(1);
-        gl.setX2(3);
-        gl.setY2(12);
-        System.out.println("Garis yang melalui titik (" + gl.getX1() + "," + gl.getY1() +
-                ") dan (" + gl.getX2() + "," + gl.getY2() + ") memiliki gradien sebesar " + gl.hitungGradien());
+        koordinat.setX1(5);
+        koordinat.setY1(1);
+        koordinat.setX2(3);
+        koordinat.setY2(12);
+        System.out.println("Garis yang melalui titik (" + koordinat.getX1() + "," + koordinat.getY1() +
+                ") dan (" + koordinat.getX2() + "," + koordinat.getY2() + ") memiliki gradien sebesar " + koordinat.hitungGradien());
     }
 
 }
