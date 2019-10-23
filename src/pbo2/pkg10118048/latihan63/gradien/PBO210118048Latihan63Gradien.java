@@ -19,20 +19,15 @@ public class PBO210118048Latihan63Gradien {
 
     public static void main(String[] args) {
         
-        Koordinat koordinat = new Koordinat(0, 0, 0, 0);
-        koordinat.setX1(2);
-        koordinat.setY1(10);
-        koordinat.setX2(5);
-        koordinat.setY2(7);
-        System.out.println("Garis yang melalui titik (" + koordinat.getX1() + "," + koordinat.getY1() +
-                ") dan (" + koordinat.getX2() + "," + koordinat.getY2() + ") memiliki gradien sebesar " + koordinat.hitungGradien());
+        Koordinat koordinat = new Koordinat(2, 10, 5, 7);
+        Koordinat koordinat2 = new Koordinat(5, 1, 3, 12);
         
-        koordinat.setX1(5);
-        koordinat.setY1(1);
-        koordinat.setX2(3);
-        koordinat.setY2(12);
         System.out.println("Garis yang melalui titik (" + koordinat.getX1() + "," + koordinat.getY1() +
-                ") dan (" + koordinat.getX2() + "," + koordinat.getY2() + ") memiliki gradien sebesar " + koordinat.hitungGradien());
+                ") dan (" + koordinat.getX2() + "," + koordinat.getY2() + ")");
+        koordinat.hitungGradien();
+        System.out.println("Garis yang melalui titik (" + koordinat2.getX1() + "," + koordinat2.getY1() +
+                ") dan (" + koordinat2.getX2() + "," + koordinat2.getY2() + ")");
+        koordinat2.hitungGradien();
     }
 
 }
